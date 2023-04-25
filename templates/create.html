@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>RecipeRendezvous - Create</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <input type="checkbox" id="check">
+                <label for="check" class="checkbtn"><i class="fa fa-bars"></i></label>
+
+            <label class="logo"><a href="./greetscreen">RecipeRendezvous</a></label>
+            <ul class="menu">
+                <li><a href="./homepage"><i class="fa fa-home"><div class="description">Home</div></i></a></li>
+                <li><a href="./search"><i class="fa fa-search"><div class="description">Search</div></i></a></li>
+                <li><a href="./bookmark"><i class="fa fa-bookmark"><div class="description">Bookmarked</div></i></a></li>
+                <li><a href="./create"><i class="fa-solid fa-plus"><div class="description">Create</div></i></a></li>
+                <li><a href="./greetscreen"><i class="fa-solid fa-right-from-bracket"><div class="description">Logout</div></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section class="recipe_card">
+        <div class="recipe_card_box">
+            <h2>Create Your Recipe</h2>
+            <form method="POST">
+                <label for="dish_name">Dish Name:</label>
+                <input type="text" id="dish_name" name="dish_name" required>
+
+                <label for="serving_size">Serving Size:</label>
+                <input type="text" id="serving_size" name="serving_size" required>
+                <br>
+                <label for="prep_time">Preperation time:</label>
+                <input type="text" id="prep_time" name="prep_time" required>
+                
+                <label for="cook_time">Cook time:</label>
+                <input type="text" id="cook_time" name="cook_time" required>
+                <br>
+                <label for="tags">Tags:</label>
+                <input type="text" id="tags" name="tags" required>
+                <br>
+                <label for="ingredients">Ingredients</label>
+                <textarea type="text" id="ingredients" name="ingredients" required></textarea>
+
+                <label for="directions">Directions</label>
+                <textarea type="text" id="directions" name="directions" required></textarea>
+
+                <label for="image">Image:</label>
+                <input type="file" id="image" name="image" accept="image/*">
+
+                <button type="submit" id="create_dish">Create</button>
+            </form>
+        </div>
+    </section>
+
+  
+
+  <script src="script.js" async defer></script>
+</body>
+</html>

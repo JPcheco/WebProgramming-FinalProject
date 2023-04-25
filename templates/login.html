@@ -2,13 +2,13 @@
 <html>
 <head>
 	<title>RecipeRendezvous - Login</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <div class="loginpage">
         <div class="box">
             <form id='form' method='post' >
-                <img src="images/logo.png" alt="RecipeRendezvous Logo">
+                <img src="{{url_for('static', filename='logo.png') }}" alt="RecipeRendezvous Logo">
                 <h1>Welcome back to RecipeRendezvous!</h1>
                 <div class="txt_field">
                     <input type="text" name="userid" required>
@@ -21,9 +21,9 @@
                     <label>Password</label>
                 </div>
                 <input type="submit" value="Login">
-                <a href="homepage.html">go to homepage (Temporary)</a>
+                <a href="./homepage">go to homepage (Temporary)</a>
                 <div class="signup">
-                    Don't have an account? <a href="signup.html">Signup</a>
+                    Don't have an account? <a href="./signup">Signup</a>
                 </div>
             </form>
         </div>

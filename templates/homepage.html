@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Homepage</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <input type="checkbox" id="check">
+                <label for="check" class="checkbtn"><i class="fa fa-bars"></i></label>
+
+            <label class="logo"><a href="./greetscreen">RecipeRendezvous</a></label>
+            <ul class="menu">
+                <li><a href="./homepage"><i class="fa fa-home"><div class="description">Home</div></i></a></li>
+                <li><a href="./search"><i class="fa fa-search"><div class="description">Search</div></i></a></li>
+                <li><a href="./bookmark"><i class="fa fa-bookmark"><div class="description">Bookmarked</div></i></a></li>
+                <li><a href="./create"><i class="fa-solid fa-plus"><div class="description">Create</div></i></a></li>
+                <li><a href="./greetscreen"><i class="fa-solid fa-right-from-bracket"><div class="description">Logout</div></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section class="welcome">
+        <div class="welcomeTXT">
+            <h2>Welcome to RecipeRendezvous!</h2>
+            <p>Discover and share delicious recipes with our community of food lovers.</p>
+        </div>
+    </section>
+
+    <section class="instructions">
+        <h2>How to Use RecipeRendezvous</h2>
+        <ol>
+            <li>Browse through our collection of recipes or search for something specific.</li>
+            <li>When you find a recipe you like, click on it to view the details.</li>
+            <li>Leave a rating or comment on the recipe if you've tried it before.</li>
+            <li>Add the recipe to your bookmarks if you want to save it for later.</li>
+            <li>Create and share your own recipes with our community.</li>
+        </ol>
+    </section>
+
+    <section id="featured-recipes">
+        <h2>Featured Recipes</h2>
+        <div class="recipe-cards">
+            <div class="recipe-card">
+            <img src="path/to/image" alt="Recipe Image">
+            <h3>Recipe Title</h3>
+            <p>Description of Recipe</p>
+            <a href="#" class="btn">View Recipe</a>
+            </div>
+            <div class="recipe-card">
+            <img src="path/to/image" alt="Recipe Image">
+            <h3>Recipe Title</h3>
+            <p>Description of Recipe</p>
+            <a href="#" class="btn">View Recipe</a>
+            </div>
+            <div class="recipe-card">
+            <img src="path/to/image" alt="Recipe Image">
+            <h3>Recipe Title</h3>
+            <p>Description of Recipe</p>
+            <a href="#" class="btn">View Recipe</a>
+            </div>
+        </div>
+    </section>
+  
+
+  <script src="script.js" async defer></script>
+</body>
+</html>

@@ -2,13 +2,13 @@
 <html>
 <head>
 	<title>RecipeRendezvous - Signup</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <div class="loginpage">
         <div class="box">
             <form id='form' method='post'>
-                <img src="images/logo.png" alt="RecipeRendezvous Logo">
+                <img src="{{url_for('static', filename='logo.png') }}">
                 <h1>Welcome to RecipeRendezvous! <br>Create an Account!</h1>
                 <div class="txt_field">
                     <input type="text" name="new_userid" required>
@@ -22,7 +22,7 @@
                 </div>
                 <input type="submit" value="Submit">
                 <div class="signup">
-                    Back to Login Page: <a href="login.html">home</a>
+                    Back to Login Page: <a href="./login">home</a>
                 </div>
             </form>
         </div>
